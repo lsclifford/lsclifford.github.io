@@ -1,31 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+title{display: none;}
 html{
     background-image: url('../img/background.png');
     min-width: 100%;
     min-height: 100%;
     text-align: center;
+    overflow-x: hide;
+}
+body{
+    min-height: 100%;
+}
+.navigation-container{
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    width: 16%;
+    
+    left: 0;
+    padding: none !important;}
+.navigation-container img{
+    width: 80%;
+    display: inline-block;
+    height: auto;
+    position: relative;
+    
 }
 nav{
-    position: fixed;
+    position: relative;
+    margin-top: ;
+    padding-top: 50%;
     font-family: HelveticaNeue-Thin;
-    color: #fff;
-    font-weight: 400;
+    color: black;
     font-size: 1.6rem;
+    border: red;
+}
+nav li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.navigation-container i{
+    position: relative;
+    padding-top: 40%;
+    color: #3b3b3b !important;
+    transition: color 0.3s ease-in-out;
+}
+.navigation-container i:hover{
+    color: #005580 !important;
 }
 ul{
     list-style: none;
 }
 section{
-    padding: 7rem 0;
+    padding: 1.5rem 0;
 }
 .front-slide{
-    height: 100vh;
+    height: 100%;
     align-items: center;
+    width: 84%;
+    float: right;
+    display: inline-block;
 }
 .front-slide h1{
     color: #fff;
     font-size: 4.0rem;
-    font-family: FuturaFuturisC;
+    font-family: Value-Serif;
     text-transform: uppercase;
+    position: relative;
+    top: 10%;
+    transform: translateY(-30%);
 }
-@font-face {font-family: FuturaFuturisC; src: url(../fonts/FuturaFuturisC.otf);}
+.front-slide h2{
+    color: #fff;
+    font-size: 2.0rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    top: 10%;
+    transform: translateY(-30%);
+}
 @font-face {font-family: HelveticaNeue-Thin; src: url(../fonts/HelveticaNeue-Thin.otf);}
+@font-face {font-family: Value-Serif; src: url(../fonts/Value-Serif.otf);}
