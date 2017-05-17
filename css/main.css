@@ -5,11 +5,13 @@
 }
 title{display: none;}
 html{
-    background-image: url('../img/background.jpg');
+    background-color: #8bcfc7;
     min-width: 100%;
     min-height: 100%;
     text-align: center;
     overflow-x: hide;
+    background-image: url('../img/149925e85a169329ea80081228ac5818.svg');
+    
 }
 body{
     min-height: 100%;
@@ -19,8 +21,9 @@ body{
     height: 100%;
     background-color: #fff;
     width: 16%;
-    
+    box-shadow: inset -10px 0 5px -5px hsla(0,0%,0%,.25);
     left: 0;
+    padding-right: 10px;
     padding: none !important;}
 .navigation-container img{
     width: 80%;
@@ -67,7 +70,7 @@ section{
 .front-slide h1{
     color: #fff;
     font-size: 4.0rem;
-    font-family: Value-Serif;
+    font-family: Apoka-Regular;
     text-transform: uppercase;
     position: relative;
     top: 10%;
@@ -84,3 +87,4 @@ section{
 }
 @font-face {font-family: HelveticaNeue-Thin; src: url(../fonts/HelveticaNeue-Thin.otf);}
 @font-face {font-family: Value-Serif; src: url(../fonts/Value-Serif.otf);}
+@font-face {font-family: Apoka-Regular; src: url(../fonts/Apoka-Regular.otf);}
