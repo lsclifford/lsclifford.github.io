@@ -3,6 +3,8 @@
     margin: 0;
     display: block;
 }
+a{text-decoration: none;color: inherit;}
+style{display:none !important;}
 title{display: none;}
 html{
     background-color: #8bcfc7;
@@ -11,8 +13,11 @@ html{
     text-align: center;
     overflow-x: hide;
     background-image: url('../img/149925e85a169329ea80081228ac5818.svg');
-    
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
+
 body{
     min-height: 100%;
 }
@@ -20,35 +25,37 @@ body{
     position: fixed;
     height: 100%;
     background-color: #fff;
-    width: 16%;
+    width: 17%;
     box-shadow: inset -10px 0 5px -5px hsla(0,0%,0%,.25);
     left: 0;
-    padding-right: 10px;
-    padding: none !important;}
-.navigation-container img{
-    width: 80%;
-    display: inline-block;
-    height: auto;
-    position: relative;
-    
+    padding: none !important;
+    min-height: 100%;
+}
+
+.inner-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%;
 }
 nav{
     position: relative;
     margin-top: ;
-    padding-top: 50%;
     font-family: HelveticaNeue-Thin;
     color: black;
     font-size: 1.6rem;
-    border: red;
+    top: 35%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
 }
 nav li{
     margin-top: 20px;
     margin-bottom: 20px;
     width: auto;
-   
 }
 nav li:hover{
-    color: #3c9086;
+    color: #005580;
 }
 .navigation-container i{
     position: relative;
@@ -56,25 +63,32 @@ nav li:hover{
     color: #3b3b3b !important;
     transition: color 0.3s ease-in-out;
 }
-.navigation-container i:hover{
+
+.envelope{
+    color: #3b3b3b !important;
+    transition: color 0.3s ease-in-out;
+}
+.envelope:hover{
     color: #005580 !important;
+    
 }
 ul{
     list-style: none;
 }
 section{
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
 }
 .front-slide{
-    height: 100%;
+    min-height: 100%;
     align-items: center;
-    width: 84%;
+    width: 83%;
     float: right;
     display: inline-block;
+    
 }
 .front-slide h1{
     color: #fff;
-    font-size: 4.0rem;
+    font-size: 4.4rem;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     position: relative;
@@ -84,7 +98,7 @@ section{
 }
 .front-slide h2{
     color: #fff;
-    font-size: 2.0rem;
+    font-size: 2.2rem;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -93,6 +107,87 @@ section{
     top: 10%;
     padding-left: 95px;
     transform: translateY(-30%);
+    
+}
+.front-slide h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: lighter;
+    text-align: left;
+}
+.profile, .portfolio, .contact{
+    color: #fff;
+    word-wrap: break-word;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile p{
+    width: auto;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+.profile img:first-child{
+    margin-bottom: 20px;
+    
+    border-radius: 50%;
+    width: 220px;
+    
+}
+.profile-inner-container{
+    margin: 10px;
+}
+.contact{
+    font-size: 1.2rem;
+}
+.contact {
+    
+}
+.portfolio{
+    padding: 20px;
+}
+.portfolio-listing{
+    color: #3b3b3b;
+    margin-top: 15px;
+    position: relative;
+    min-width: 250px;
+    height: px;
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 6px;
+    width:400px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
+    transition: box-shadow .2s ease-in-out;
+    text-align: center !important;
+}
+.portfolio-listing img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+.portfolio-listing:hover{
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
+}
+.portfolio-listing h3, p{
+    
+}
+.icons > *{
+    max-width: 60px;
+    display: inline;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all ease-in-out 0.2s;
+}
+.icons img i:hover{
+    opacity: 0.2;
 }
 @font-face {font-family: HelveticaNeue-Thin; src: url(../fonts/HelveticaNeue-Thin.otf);}
 @font-face {font-family: Value-Serif; src: url(../fonts/Value-Serif.otf);}

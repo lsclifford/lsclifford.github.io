@@ -1,34 +1,86 @@
 <DOCTYPE html>
 <html>
     <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <script src="https://use.fontawesome.com/377a1c805c.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,500i,700" rel="stylesheet">
-    <title>Liam Clifford</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,500i,700" rel="stylesheet">
+        <title>Liam Clifford</title>
     </head>
     <body>
         <section class="navigation-container">
-            <img src="img/portrait.jpg"/>
             <nav>
-            <ul>
-                <li >About</li>
-                <li >Projects</li>
-                <li></li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <a class="animated pulse" href="mailto:lsclifford@outlook.com"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+                <ul>
+                    <li>About Me</li>
+                    <li>My Portfolio</li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                
+                <a class="animated pulse" href="mailto:lsclifford@outlook.com">
+                    <div class="envelope">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </div>
+                </a>
+                
+            </nav>
+            
         </section>
         
         <section class="front-slide">
-            <h1 class="animated slideInDown">Liam Clifford</h1>
-            <h2 class="animated slideInDown">Aspiring Web Developer</h2>
+            <section class="inner-container">
+                <section class="header">
+                    <h1 class="animated slideInDown">Liam Clifford</h1>
+                    <h2 class="animated slideInDown">Web Developer</h2>
+                </section>
+                <section class="profile">
+                    <section><h3>About Me  <i class="fas fa-user"></i></h3></section>
+                    <hr>
+                    <section class="profile-inner-container">
+                        
+                        <section style="">
+                            <img style=" border: 2px solid #fff;" src="img/portrait.jpg"/>
+                        </section>
+                        <p>
+                            And I am a 21-year-old self-taught web developer from Ireland. Creating websites and web applications has always fascinated me, that's why I decided to turn this interest into a career. Despite acquiring considerable knowledge in a relatively short time, I do not rest on my laurels and constantly try to develop, which allows me to write better and better code and create more complex projects. I am a huge fan of BEM methodology, semantics and flat specificity, and in the design of websites I prefer minimalism and simplicity from fireworks and unnecessary animations.
+                        </p>
+                        <p>Web technologies / tools I use:</p>
+                        <div class="icons">
+                            <i style="color:rgb(231, 117, 41)"class="fab fa-html5 fa-4x"></i>
+                            <i style="color:#5dd55d;" class="fab fa-css3-alt fa-4x"></i>
+                            <i style="color:black" class="fab fa-github fa-4x"></i>
+                            <i style="color:rgb(243, 231, 56)" class="fab fa-js-square fa-4x"></i>
+                            <img src="img/digitalocean-logo.svg"/>
+                            <img style="border-radius:0px;" src="img/vs-code.svg"/>
+                            <img style="margin-bottom:30px;" src="img/django-logo-negative.svg"/>
+                        </div>
+                    </section>
+                    
+                </section>
+                <section class="portfolio">
+                    <section><h3>My Portfolio  <i class="fas fa-suitcase"></i></h3></section>
+                    <hr>
+                        <section style="background-color:#F5D9DD;" class="portfolio-listing">
+                            <section><img src="img/MollyRoseLogoPink-30x30mm.png"/></section>
+                            <section><h3>Molly Rose Events</h3></section>
+                            <section><p>UI</p></section>
+                            
+                        </section>
+                </section>
+                <section id="contact" class="contact">
+                    <section><h3>Contact Me  <i class="fas fa-envelope"></i></h3></section>
+                    <hr>
+                    <section>
+                        <section><a href="mailto:lsclifford@outlook.com"><i class="fas fa-at"></i> lsclifford@outlook.com</a></section>
+                        <section><a href=""><i class="fas fa-mobile"></i>(+44) 89 474 1566</a></section>
+                    </section>
+                </section>
+            </section>
         </section>
     </body>
 </html>
