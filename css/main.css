@@ -151,6 +151,9 @@ section{
 .portfolio{
     padding: 20px;
 }
+.portfolio a{
+    display: inline;
+}
 .portfolio-listing{
     color: #3b3b3b;
     margin-top: 15px;
@@ -160,16 +163,24 @@ section{
     background-color: #fff;
     opacity: 0.9;
     border-radius: 6px;
-    width:400px;
+    width:300px;
     overflow: hidden;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);
     transition: box-shadow .2s ease-in-out;
     text-align: center !important;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 25px;
 }
 .portfolio-listing img{
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    width: auto;
+    height: 250px;
+}
+.portfolio-listing section{
+    margin: 0px;
+    padding: 0px;
 }
 .portfolio-listing:hover{
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.07), 0 7px 17px 0 rgba(0,0,0,.1);

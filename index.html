@@ -17,8 +17,8 @@
         <section class="navigation-container">
             <nav>
                 <ul>
-                    <li>About Me</li>
-                    <li>My Portfolio</li>
+                    <li><a href="#profile">About Me</a></li>
+                    <li><a href="#portfolio">My Portfolio</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
                 
@@ -38,7 +38,7 @@
                     <h1 class="animated slideInDown">Liam Clifford</h1>
                     <h2 class="animated slideInDown">Web Developer</h2>
                 </section>
-                <section class="profile">
+                <section id="profile" class="profile">
                     <section><h3>About Me  <i class="fas fa-user"></i></h3></section>
                     <hr>
                     <section class="profile-inner-container">
@@ -47,7 +47,7 @@
                             <img style=" border: 2px solid #fff;" src="img/portrait.jpg"/>
                         </section>
                         <p>
-                            And I am a 21-year-old self-taught web developer from Ireland. Creating websites and web applications has always fascinated me, that's why I decided to turn this interest into a career. Despite acquiring considerable knowledge in a relatively short time, I do not rest on my laurels and constantly try to develop, which allows me to write better and better code and create more complex projects. I am a huge fan of BEM methodology, semantics and flat specificity, and in the design of websites I prefer minimalism and simplicity from fireworks and unnecessary animations.
+                            And I am a 21-year-old self-taught web developer from Ireland. Creating websites and web applications has always fascinated me and I intend to turn this interest into a career. I am proficient in HTML5, CSS3 and JavaScript and my framework of choice is dJango. 
                         </p>
                         <p>Web technologies / tools I use:</p>
                         <div class="icons">
@@ -62,15 +62,21 @@
                     </section>
                     
                 </section>
-                <section class="portfolio">
+                <section id="portfolio" class="portfolio">
                     <section><h3>My Portfolio  <i class="fas fa-suitcase"></i></h3></section>
                     <hr>
-                        <section style="background-color:#F5D9DD;" class="portfolio-listing">
-                            <section><img src="img/MollyRoseLogoPink-30x30mm.png"/></section>
-                            <section><h3>Molly Rose Events</h3></section>
-                            <section><p>UI</p></section>
-                            
-                        </section>
+                        <a href="http://www.mollyroseevents.co.uk">
+                            <section style="background-color:#F5D9DD;" class="portfolio-listing">
+                                <section><img src="img/MollyRoseLogoPink-30x30mm.png"/></section>
+                                <section><p>Molly Rose Events</p></section>
+                            </section>
+                        </a>
+                        <a href="http://www.chickenvintage.com">
+                            <section style="background-color:#b9bf8d;" class="portfolio-listing">
+                                <section><img src="img/front_logo.png"/></section>
+                                <section><p>Chicken Vintage</p></section>
+                            </section>
+                        </a>
                 </section>
                 <section id="contact" class="contact">
                     <section><h3>Contact Me  <i class="fas fa-envelope"></i></h3></section>
@@ -82,5 +88,6 @@
                 </section>
             </section>
         </section>
+        <footer></footer>
     </body>
 </html>
