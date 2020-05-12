@@ -150,11 +150,16 @@ section{
 }
 .portfolio{
     padding: 20px;
+    text-align:justify;
 }
 .portfolio a{
-    display: inline;
+    display: inline-block;
+    margin: auto;
+    text-align:justify;
+    float: justify;
 }
 .portfolio-listing{
+    text-align:justify;
     color: #3b3b3b;
     margin-top: 15px;
     position: relative;
